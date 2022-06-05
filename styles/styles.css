@@ -1,0 +1,407 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap; /* чтобы шрифт не блокировался и имел бесконечный период подмены */
+} 
+ 
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap; 
+
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap; 
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+} 
+ 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.form-label {
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.form-input {
+  line-height: 20px;
+  color: #B9B9B9;
+} 
+
+  /* Pages */
+/* header */
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link, .navigation-link-address-phone {
+    line-height: 20px;
+    color: inherit;
+    text-align: center;
+    /* стоит ли ичаользовать так? color: inherit; */
+    text-decoration: none;
+    line-height: 20px;
+}
+
+/* slider */
+.slider-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.slider-description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-order-button{
+  color: #2D3440;
+  text-decoration: none;  
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4); 
+}
+
+/* gift */
+.gift-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.gift-features {
+  background-color: #FF7799;
+  border-radius: 16px;
+}
+
+.gift-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gift-description {
+  line-height: 22px;
+}
+
+.gift-button {
+  color: #2D3440;
+  text-decoration: none;  
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4); 
+}
+
+/* taste */
+.taste-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+ 
+.taste-item, .product-list {
+  list-style-type: none;
+}
+/* стоит создать новый div для объединения текста и задавать подложку ему?
+или оставить подложку всей карточке? */
+.taste-item, .product-card {
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.taste-item-image, .product-card-image {
+  border-radius: 50%;
+}
+
+.taste-name, .product-card-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2D3440;
+}
+
+.taste-description, .product-card-description {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565C66;
+}
+
+.taste-price, .product-card-price {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* info-shop */
+.info-shop {
+  background-image: url("/images/bg-wafer.jpg");
+  border-radius: 16px;
+}
+
+.info-shop-card {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.info-shop-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+}
+
+.info-shop-list {
+  list-style-type: none;
+}
+
+.info-shop-description {
+  line-height: 22px;
+  color: #565C66;
+}
+
+/* subscription */
+.subscription-blog {
+  background-image: url("/images/bg-news.jpg");
+  border-radius: 16px;
+}
+
+.subscription-blog-description {
+  line-height: 20px;
+  color: #565C66;
+}
+
+.subscription-blog-link {
+  color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.subscription-mailing {
+  background-image: url("/images/bg-lines.jpg");
+  border-radius: 16px;
+}
+
+.subscription-form {
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+.subscription-form-description {
+  line-height: 22px;
+  color: #565C66;
+}
+
+.newsletter-button{
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+/* delivery */
+.delivery {
+  background-image: url("/images/bg-delivery.jpg");
+  border-radius: 16px;
+}
+
+.delivery-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.delivery-text {
+  line-height: 22px;
+  color: #565C66;
+}
+
+.delivery-form {
+  background-color: #FCFCFC;
+  box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+}
+
+.delivery-form-title {
+  line-height: 22px;
+  color: #565C66;
+}
+
+.form-button{
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+/* contacts */
+.contacts {
+  color: #565C66;
+  background-image: url("/images/bg-contacts.jpg");
+  border-radius: 16px;
+}
+
+.contacts-address {
+  background-color: #FCFCFC;
+  box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12)
+}
+
+.contacts-address-subtitle {
+  font-style: normal;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-address-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.contacts-phone-subtitle {
+  font-style: normal;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.contacts-phone {
+  font-style: normal;
+  color: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.contacts-phone-time {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.contacts-button {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+}
+
+/* footer */
+.footer-partnership-list {
+  list-style-type: none;
+}
+
+.footer-partnership-link-provider {
+  font-weight: 700;
+  color: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer-partnership-link {
+  font-size: 14px;
+  color: inherit;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer-description-link {
+  font-size: 12px;
+  line-height: 16px;
+  color: inherit;
+}
+
+.htmlacademy-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CATALOG */
+
+/* header */
+.breadcrumbs {
+  color: #2D3440;
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.inner-header-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+/* form */
+.catalog-filter-title {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.pagination-show-more {
+  color: #2D3440;
+  text-decoration: none;  
+  background-color: #FCFCFC;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  
+}
+
+.catalog-button {
+  color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 20px;
+}
+
+
+/* product */
+.product-card-link {
+  text-decoration: none;
+}
