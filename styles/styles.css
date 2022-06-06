@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -47,8 +47,7 @@ body {
 }
 
 .button {
-  font-family: 'Inter';
-  font-style: normal;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -74,11 +73,14 @@ body {
   list-style-type: none;
 }
 
+.navigation-dropdown-list {
+  list-style-type: none;
+}
+
 .navigation-link, .navigation-link-address-phone {
     line-height: 20px;
-    color: inherit;
+    color: #2D3440;
     text-align: center;
-    /* стоит ли ичаользовать так? color: inherit; */
     text-decoration: none;
     line-height: 20px;
 }
@@ -143,8 +145,7 @@ body {
 .taste-item, .product-list {
   list-style-type: none;
 }
-/* стоит создать новый div для объединения текста и задавать подложку ему?
-или оставить подложку всей карточке? */
+
 .taste-item, .product-card {
   background-color: #FCFCFC;
   border-radius: 8px;
@@ -176,7 +177,7 @@ body {
 
 /* info-shop */
 .info-shop {
-  background-image: url("/images/bg-wafer.jpg");
+  background-image: url("../images/bg-wafer.jpg");
   border-radius: 16px;
 }
 
@@ -203,7 +204,7 @@ body {
 
 /* subscription */
 .subscription-blog {
-  background-image: url("/images/bg-news.jpg");
+  background-image: url("../images/bg-news.jpg");
   border-radius: 16px;
 }
 
@@ -213,7 +214,7 @@ body {
 }
 
 .subscription-blog-link {
-  color: inherit;
+  color: #2D3440;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -221,7 +222,7 @@ body {
 }
 
 .subscription-mailing {
-  background-image: url("/images/bg-lines.jpg");
+  background-image: url("../images/bg-lines.jpg");
   border-radius: 16px;
 }
 
@@ -243,7 +244,7 @@ body {
 
 /* delivery */
 .delivery {
-  background-image: url("/images/bg-delivery.jpg");
+  background-image: url("../images/bg-delivery.jpg");
   border-radius: 16px;
 }
 
@@ -277,7 +278,7 @@ body {
 /* contacts */
 .contacts {
   color: #565C66;
-  background-image: url("/images/bg-contacts.jpg");
+  background-image: url("../images/bg-contacts.jpg");
   border-radius: 16px;
 }
 
@@ -306,7 +307,7 @@ body {
 
 .contacts-phone {
   font-style: normal;
-  color: inherit;
+  color: #2D3440;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -333,7 +334,7 @@ body {
 
 .footer-partnership-link-provider {
   font-weight: 700;
-  color: inherit;
+  color: #2D3440;
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
@@ -341,7 +342,7 @@ body {
 
 .footer-partnership-link {
   font-size: 14px;
-  color: inherit;
+  color: #2D3440;
   line-height: 20px;
   text-decoration: none;
 }
@@ -349,11 +350,11 @@ body {
 .footer-description-link {
   font-size: 12px;
   line-height: 16px;
-  color: inherit;
+  color: #2D3440;
 }
 
 .htmlacademy-link {
-  color: inherit;
+  color: #2D3440;
   text-decoration: none;
 }
 
@@ -369,7 +370,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  color: inherit;
+  color: #2D3440;
   text-decoration: underline;
 }
 
