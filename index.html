@@ -179,40 +179,48 @@
                 alt="Сливочное мороженое с малиновым джемом">
               <h3 class="taste-name">Малинка</h3>
               <p class="taste-description">Сливочное мороженое с малиновым джемом</p>
-              <p class="taste-price">310 ₽/кг</p>
-              <a class="taste-price-link" href="./catalog.html">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              <div class="taste-add">
+                <p class="taste-price">310 ₽/кг</p>
+                <a class="taste-price-link" href="./catalog.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
             </li>
             <li class="taste-item">
               <img class="taste-item-image" src="./images/catalog/icecream-pistachio.jpg" width="168" height="168"
                 alt="Фисташковый пломбир с кусочками шоколада">
               <h3 class="taste-name">Фисташка</h3>
               <p class="taste-description">Фисташковый пломбир с кусочками шоколада</p>
-              <p class="taste-price">340 ₽/кг</p>
-              <a class="taste-price-link" href="./catalog.html">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              <div class="taste-add">
+                <p class="taste-price">340 ₽/кг</p>
+                <a class="taste-price-link" href="./catalog.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
             </li>
             <li class="taste-item">
               <img class="taste-item-image" src="./images/catalog/icecream-blueberry.jpg" width="168" height="168"
                 alt="Крем-брюле с черничным джемом">
               <h3 class="taste-name">Черника</h3>
               <p class="taste-description">Крем-брюле с черничным джемом</p>
-              <p class="taste-price">330 ₽/кг</p>
-              <a class="taste-price-link" href="./catalog.html">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              <div class="taste-add">
+                <p class="taste-price">330 ₽/кг</p>
+                <a class="taste-price-link" href="./catalog.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
             </li>
             <li class="taste-item">
               <img class="taste-item-image" src="./images/catalog/icecream-bablgam.jpg" width="168" height="168"
                 alt="Ванильный пломбир со сладкой посыпкой">
               <h3 class="taste-name">Бабл-гам</h3>
               <p class="taste-description">Ванильный пломбир со сладкой посыпкой</p>
-              <p class="taste-price">320 ₽/кг</p>
-              <a class="taste-price-link" href="./catalog.html">
-                <span class="visually-hidden">Добавить в корзину</span>
-              </a>
+              <div class="taste-add">
+                <p class="taste-price">320 ₽/кг</p>
+                <a class="taste-price-link" href="./catalog.html">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </a>
+              </div>
             </li>
           </ul>
         </section>
@@ -259,8 +267,8 @@
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
                 ерунды.
                 Честно =)</p>
-              <input class="newsletter-input form-input" placeholder="email@example.com" type="email" name="newsletter-email"
-                id="newsletter-email" required>
+              <input class="newsletter-input form-input" placeholder="email@example.com" type="email"
+                name="newsletter-email" id="newsletter-email" required>
               <button class="newsletter-button button" type="submit">Отправить</button>
             </form>
           </div>
@@ -272,25 +280,34 @@
             <p class="delivery-text">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите
               доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
           </div>
-          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="delivery-form-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+          <div class="delivery-info">
+            <p class="delivery-info-title">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
             </p>
-            <p class="delivery-form-date">
-              <label class="delivery-form-label" for="delivery-date">Дата</label>
-              <input class="delivery-form-input" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-            </p>
-            <p class="delivery-form-phone">
-              <label class="delivery-form-label" for="delivery-phone">Телефон</label>
-              <input class="delivery-form-input" type="text" id="delivery-phone" name="delivery-phone"
-                placeholder="+7 800 999-00-00">
-            </p>
-            <p class="delivery-form-address">
-              <label class="delivery-form-label" for="delivery-address">Адрес</label>
-              <input class="delivery-form-input" type="text" id="delivery-address" name="delivery-address"
-                placeholder="ул. Большая Конюшенная, 19/8">
-            </p>
-            <button class="delivery-form-button button" type="submit">Отправить</button>
-          </form>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="delivery-form-date">
+                <label class="delivery-form-label" for="delivery-date">Дата</label>
+                <button class="delivery-form-info">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+                <input class="delivery-form-input" type="text" id="delivery-date" name="delivery-date"
+                  placeholder="01.04.2020">
+              </p>
+              <p class="delivery-form-phone">
+                <label class="delivery-form-label" for="delivery-phone">Телефон</label>
+                <input class="delivery-form-input" type="text" id="delivery-phone" name="delivery-phone"
+                  placeholder="+7 800 999-00-00">
+              </p>
+              <p class="delivery-form-address">
+                <label class="delivery-form-label" for="delivery-address">Адрес</label>
+                <button class="delivery-form-info">
+                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+                </button>
+                <input class="delivery-form-input" type="text" id="delivery-address" name="delivery-address"
+                  placeholder="ул. Большая Конюшенная, 19/8">
+              </p>
+              <button class="delivery-form-button button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
