@@ -60,30 +60,16 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
+  padding: 12px 32px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
   cursor: pointer;
-}
-
-.social-telegram {
-  background-image: url("../images/telegram.svg");
-  background-repeat: no-repeat;
-}
-
-.social-vk {
-  background-image: url("../images/vk.svg");
-  background-repeat: no-repeat;
-
-}
-
-.social-youtube {
-  background-image: url("../images/youtube.svg");
-  background-repeat: no-repeat;
 }
 
   /* Pages */
@@ -118,6 +104,7 @@ body {
 }
 
 .navigation-link, .navigation-link-address-phone {
+  position: relative;
   display: block;
   padding: 8px 8px;
   line-height: 20px;
@@ -126,20 +113,36 @@ body {
   text-decoration: none;
 }
 
-.search, .login, .card{
+.navigation-link-search, .navigation-link-login, .navigation-link-card{
   background: rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   margin: 0 8px;
 }
 
-.search {
+.navigation-link-search {
   box-sizing: border-box;
-  background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
   width: 32px;
   height: 32px;
+}
+
+.navigation-link-login, .navigation-link-card {
+  padding: 6px 16px 6px 38px;
+}
+
+.navigation-icon {
+  position: absolute;
+  fill: #2D3440;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.navigation-link-login .navigation-icon, .navigation-link-card .navigation-icon {
+  right: auto;
+  left: 16px;
+  margin: auto 0;
 }
 
 .navigation-link-address-phone {
@@ -171,10 +174,19 @@ body {
 }
 
 .slider-order {
+  position: relative;
   display: flex;
   align-items: center;
 }
-.slider-order:nth-child(2) .slide-image, .slider-order:last-child .slide-image{
+
+.slide-image::after {
+  content: "";
+  background: aqua;
+  border-radius: 50% 50%;
+}
+
+.slider-order:nth-child(2) .slide-image, .slider-order:nth-child(3) .slide-image{
+  opacity: 0.4;
   max-width: 100px;
   max-height: 150px;
 }
@@ -195,8 +207,6 @@ body {
 }
 
 .slider-order-button{
-  display: inline-block;
-  padding: 12px 32px;
   color: #2D3440;
   text-decoration: none;
   background-color: #FCFCFC;
@@ -206,16 +216,34 @@ body {
   border-radius: 26px;
 }
 
+.slider-button {
+  position: absolute;
+  right: 50%;
+}
+
+.slider-prev, .slider-next {
+  min-width: 38px;
+  min-height: 38px;
+  background: rgba(252, 252, 252, 0.3);
+  border: 2px solid #FCFCFC;
+  border-radius: 26px;
+  fill: #FCFCFC;
+}
+
 .slider-social {
   display: flex;
   justify-content: space-between;
 }
 
-.slider-social-item {
-  background-color: #FCFCFC;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
+.social-link {
+  padding: 0;
+  /* border: 2px solid rgba(252, 252, 252, 0.4); */
+  width: 28px; /* не получается сделать размер как в макете 24 px */
+  height: 28px;
+}
+
+.slider-icon, .footer-icon {
+  fill: #FCFCFC;
 }
 
 .slider-pagination {
@@ -226,18 +254,17 @@ body {
   padding: 0;
 }
 
-.slider-pagination-button-current {
-  /* opacity: 1;  не хочет рабоать  */
-}
-
 .slider-pagination-button {
   background: #FCFCFC;
-  opacity: 0.3;
   border-radius: 50%;
   border: none;
   min-width: 12px;
   min-height: 12px;
   margin-right: 8px;
+}
+
+.slider-pagination-button:not(.slider-pagination-button-current) {
+  opacity: 0.3;
 }
 
 .slider-social-list {
@@ -253,7 +280,6 @@ body {
   width: 24px;
   height: 24px;
   margin-right: 16px;
-  margin-bottom: 16px;
 }
 
 .slider-social-item:nth-child(3n) {
@@ -319,7 +345,6 @@ body {
 
 .gift-button {
   display: inline-block;
-  padding: 12px 32px;
   color: #2D3440;
   text-decoration: none;
   background-color: #FCFCFC;
@@ -370,6 +395,9 @@ body {
   border-radius: 50%;
   position: absolute;
   top: -60px;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 .taste-name, .product-card-title {
@@ -395,6 +423,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
 
 .taste-price, .product-card-price {
@@ -403,11 +432,23 @@ body {
 }
 
 .taste-price-link, .product-card-button {
+  position: relative;
   width: 32px;
   height: 32px;
   border: none;
   border-radius: 50%;
   background: #FF2F64;
+  padding: 0;
+}
+
+.taste-price-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #FCFCFC;
 }
 
 /* info-shop */
@@ -443,6 +484,14 @@ body {
 
 .info-shop-item {
   width: 505px;
+}
+
+.icon-ice::before {
+  content: "";
+  padding-right: 64px;
+  background-image: url("../images/icecream.svg");
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
 }
 
 .info-shop-item:nth-child(-n+2) {
@@ -520,9 +569,9 @@ body {
 }
 
 .newsletter-button{
-  padding: 12px 32px;
   color: #FCFCFC;
   background-color: #FF2F64;
+  background-clip: padding-box;
   border: 4px solid rgba(255, 47, 100, 0.3);
 }
 
@@ -589,7 +638,6 @@ body {
 .delivery-form-button{
   grid-column: 1 / -1;
   justify-self: center;
-  padding: 12px 32px;
   color: #FCFCFC;
   background-color: #FF2F64;
   background-clip: padding-box;
@@ -669,7 +717,6 @@ body {
 }
 
 .contacts-button {
-  padding: 12px 32px;
   color: #FCFCFC;
   background-color: #FF2F64;
   background-clip: padding-box;
@@ -681,7 +728,8 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .footer-social {
@@ -722,6 +770,24 @@ body {
   list-style-type: none;
 }
 
+.footer-partnership-item {
+  position: relative;
+}
+
+.footer-partnership-link-provider:first-child::before {
+  content: "";
+  background-image: url("../images/heart.svg");
+  position: absolute;
+  top: 0;
+  left: -24px;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 15px;
+  width: 15px;
+  background-repeat: no-repeat;
+}
+
 .footer-partnership-link-provider {
   font-weight: 700;
   color: #2D3440;
@@ -760,7 +826,7 @@ body {
 
 .htmlacademy-link {
   color: #2D3440;
-  text-decoration: none;
+  text-underline-position: under;
 }
 
 /* CATALOG */
@@ -862,7 +928,6 @@ body {
   border-radius: 20px;
 }
 
-
 .catalog-button {
   padding: 8px 52.5px;
   color: #2D3440;
@@ -921,6 +986,7 @@ body {
   list-style-type: none;
   margin-left: auto;
   padding: 0;
+  align-items: center;
 }
 
 .pagination-link {
@@ -937,4 +1003,8 @@ body {
 .pagination-current {
   background: #FCFCFC;
   border-radius: 76px;
+}
+
+.pagination-disabled svg {
+  opacity: 0.3;
 }
