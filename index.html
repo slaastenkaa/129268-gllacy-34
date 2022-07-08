@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="png" sizes="32x32" href="./images/favicon-big.png">
+    <link rel="icon" type="png" sizes="16x16" href="./images/favicon-small.png">
   </head>
 
   <body>
@@ -54,17 +56,15 @@
                   d="M1.66 6.33a4.67 4.67 0 1 1 9.34 0 4.67 4.67 0 0 1-9.34 0Zm8.42 4.69a6 6 0 1 1 .94-.94l2.45 2.45a.67.67 0 1 1-.94.94l-2.45-2.45Z" />
               </svg>
               <span class="visually-hidden">
-                Поиск
+                Поиск.
               </span>
             </a>
             <div class="popover-container container-search">
               <h3 class="visually-hidden">Поиск по сайту</h3>
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="visually-hidden" for="search">Поиск</label>
                 <input class="search-input form-input" placeholder="Поиск по сайту" type="search" name="search"
                   id="popover-search" required>
-                <!-- <button class="search-button button" type="submit">
-                        <span class="visually-hidden">Закрыть</span>
-                </button> -->
               </form>
             </div>
           </li>
@@ -91,7 +91,7 @@
                       value="Пароль">
                   </fieldset>
                   <div class="popover-form-button">
-                    <button class="popover-button-login popover-button button-additional button">
+                    <button class="popover-button-login popover-button button-additional button" type="button">
                       Войти
                     </button>
                     <div class="popover-login-link">
@@ -131,7 +131,7 @@
                           d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z">
                       </svg>
                     </button>
-                    <span class="visually-hidden">Убрать из корзины</span>
+                    <span class="visually-hidden">Убрать из корзины.</span>
                   </li>
                   <li class="popover-cart-item">
                     <img class="popover-cart-image" src="./images/catalog/icecream-bablgam.jpg" width="46" height="46"
@@ -148,7 +148,7 @@
                           d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z">
                       </svg>
                     </button>
-                    <span class="visually-hidden">Убрать из корзины</span>
+                    <span class="visually-hidden">Убрать из корзины.</span>
                   </li>
                 </ul>
               </div>
@@ -213,7 +213,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M9.8 3.8a.66.66 0 1 0-.94-.94L4.2 7.53a.67.67 0 0 0 0 .94l4.67 4.67a.66.66 0 1 0 .94-.94L5.6 8l4.2-4.2Z" />
               </svg>
-              <span class="visually-hidden">Предыдущее фото</span>
+              <span class="visually-hidden">Предыдущее фото.</span>
             </button>
             <button class="slider-button slider-next" type="button">
               <svg aria-hidden="true" focusable="false" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"
@@ -221,7 +221,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M7.14 2.86a.66.66 0 1 0-.95.95L10.4 8l-4.2 4.2a.67.67 0 0 0 .95.94l4.66-4.67a.66.66 0 0 0 0-.94L7.15 2.86Z" />
               </svg>
-              <span class="visually-hidden">Следующее фото</span>
+              <span class="visually-hidden">Следующее фото.</span>
             </button>
 
           </div>
@@ -230,17 +230,17 @@
             <ol class="slider-pagination">
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                  <span class="visually-hidden">1 фото</span>
+                  <span class="visually-hidden">1 фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">2 фото</span>
+                  <span class="visually-hidden">2 фото.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
                 <button class="slider-pagination-button" type="button">
-                  <span class="visually-hidden">3 фото</span>
+                  <span class="visually-hidden">3 фото.</span>
                 </button>
               </li>
             </ol>
@@ -253,7 +253,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.43 8.86c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.65-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z">
                   </svg>
-                  <span class="visually-hidden">Телеграм</span>
+                  <span class="visually-hidden">Телеграм.</span>
                 </a>
               </li>
               <li class="slider-social-item social-item">
@@ -263,7 +263,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z">
                   </svg>
-                  <span class="visually-hidden">ВКонтакте</span>
+                  <span class="visually-hidden">ВКонтакте.</span>
                 </a>
               </li>
               <li class="slider-social-item social-item">
@@ -274,7 +274,7 @@
                     <path
                       d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" />
                   </svg>
-                  <span class="visually-hidden">Ютуб</span>
+                  <span class="visually-hidden">Ютуб.</span>
                 </a>
               </li>
             </ul>
@@ -319,7 +319,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
                   </svg>
-                  <span class="visually-hidden">Добавить в корзину</span>
+                  <span class="visually-hidden">Добавить в корзину.</span>
                 </a>
               </div>
             </li>
@@ -336,7 +336,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
                   </svg>
-                  <span class="visually-hidden">Добавить в корзину</span>
+                  <span class="visually-hidden">Добавить в корзину.</span>
                 </a>
               </div>
             </li>
@@ -353,7 +353,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
                   </svg>
-                  <span class="visually-hidden">Добавить в корзину</span>
+                  <span class="visually-hidden">Добавить в корзину.</span>
                 </a>
               </div>
             </li>
@@ -370,7 +370,7 @@
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.17 2.1a.67.67 0 0 0 0 1.34h1.77l.47 2.34v.05l.97 4.83a1.83 1.83 0 0 0 1.82 1.47h5.62a1.83 1.83 0 0 0 1.82-1.47l.93-4.86a.67.67 0 0 0-.66-.8h-9.3l-.47-2.36a.67.67 0 0 0-.66-.53H1.17Zm4.52 8.3-.81-4.06h8.23l-.78 4.07a.5.5 0 0 1-.49.39H6.18a.5.5 0 0 1-.49-.4Zm-1.13 3.96a1.25 1.25 0 1 1 2.49 0 1.25 1.25 0 0 1-2.5 0Zm6.37 0a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0Z" />
                   </svg>
-                  <span class="visually-hidden">Добавить в корзину</span>
+                  <span class="visually-hidden">Добавить в корзину.</span>
                 </a>
               </div>
             </li>
@@ -419,6 +419,7 @@
                 в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной
                 ерунды.
                 Честно =)</p>
+              <label class="visually-hidden" for="form-email">Ваша почта</label>
               <input class="newsletter-input form-input" placeholder="email@example.com" type="email"
                 name="newsletter-email" id="newsletter-email" required>
               <button class="button-additional button" type="submit">Отправить</button>
@@ -472,7 +473,7 @@
                           d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" />
                       </svg>
                     </button>
-                    <span class="delivery-tooltip-text" role="tooltip" id="tooltip-label">Укажите адрес для
+                    <span class="delivery-tooltip-text" role="tooltip" id="tooltip-label">Укажите адрес для доставки
                       заказа</span>
                   </span>
                 </span>
@@ -491,7 +492,7 @@
             <p class="contacts-phone-subtitle">Для заказов по телефону:</p>
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
-            <button class="button-additional button">Форма обратной связи</button>
+            <button class="button-additional button" type="button">Форма обратной связи</button>
           </address>
         </section>
       </div>
@@ -508,7 +509,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0ZM12.43 8.86c-1.17.48-3.5 1.49-7 3.01-.57.23-.86.45-.9.67-.04.36.42.5 1.04.7l.27.08c.6.2 1.43.44 1.86.45.39 0 .82-.16 1.3-.48 3.27-2.21 4.96-3.33 5.06-3.35.08-.02.18-.04.25.02.07.07.07.18.06.22-.05.19-1.84 1.86-2.77 2.72a28.24 28.24 0 0 0-.82.79c-.57.54-1 .96.02 1.63.5.32.89.59 1.28.85a88.77 88.77 0 0 0 1.8 1.23c.5.35.95.67 1.5.62.32-.03.65-.33.82-1.23.4-2.13 1.18-6.73 1.36-8.63.01-.16 0-.31-.02-.47a.5.5 0 0 0-.17-.33.78.78 0 0 0-.46-.14c-.46.01-1.15.25-4.48 1.64Z">
                 </svg>
-                <span class="visually-hidden">Телеграм</span>
+                <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item social-item">
@@ -518,7 +519,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24 12a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11.41 2.97h-.72s-1.58.09-2.98-1.18C7.37 12.4 6.03 9.65 6.03 9.65s-.07-.18 0-.27c.1-.1.36-.1.36-.1l1.72-.01s.16.02.27.1c.1.05.15.17.15.17s.28.61.65 1.17c.71 1.08 1.05 1.32 1.29 1.2.35-.16.25-1.53.25-1.53s0-.5-.18-.71c-.14-.17-.41-.22-.53-.24-.1-.01.06-.2.26-.3.31-.13.86-.13 1.5-.13.5 0 .65.03.84.07.46.1.44.41.41 1.08l-.02.7v.18c-.01.34-.02.73.23.88.13.07.45 0 1.26-1.19.38-.56.66-1.23.66-1.23s.07-.12.16-.17c.1-.05.24-.04.24-.04h1.8s.54-.06.63.15c.1.23-.2.75-.94 1.61-.7.82-1.03 1.12-1 1.38.01.2.23.38.66.72.89.73 1.13 1.1 1.18 1.2l.01.01c.4.58-.44.62-.44.62l-1.6.02s-.34.06-.8-.2a3.94 3.94 0 0 1-.69-.6c-.33-.34-.65-.66-.91-.58-.45.12-.44.96-.44.96s0 .18-.1.28c-.1.1-.32.12-.32.12Z">
                 </svg>
-                <span class="visually-hidden">ВКонтакте</span>
+                <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item social-item">
@@ -529,7 +530,7 @@
                   <path
                     d="m14 11.8-2.8-1.32c-.25-.11-.45.01-.45.29v2.46c0 .28.2.4.45.29L14 12.2c.25-.12.25-.3 0-.42ZM12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 16.88c-6.14 0-6.25-.56-6.25-4.88s.1-4.88 6.25-4.88c6.14 0 6.25.56 6.25 4.88s-.1 4.88-6.25 4.88Z" />
                 </svg>
-                <span class="visually-hidden">Ютуб</span>
+                <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
@@ -552,7 +553,7 @@
           </ul>
         </section>
         <section class="footer-copyright">
-          <h2 class="visually-hidden">Сделано в .html academy</h2>
+          <h2 class="visually-hidden">Сделано в .html academy.</h2>
           <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
             <img class="page-footer-logo" src="./images/logo_htmlacademy.svg" width="100" height="50"
               alt="Логотип разработчика сайта `.html academy`.">
@@ -563,38 +564,33 @@
       </div>
     </footer>
 
-    <!-- <div class="modal-container">
+    <div class="modal-container modal-close">
       <div class="modal-auth modal">
-        <button class="modal-close-button button" type="submit">
-          <svg class="popover-cart-deleted-icon" aria-hidden="true" focusable="false" fill="currentColor" width="16"
-            height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M12.8 4.14a.67.67 0 1 0-.94-.94L8 7.06 4.14 3.2a.67.67 0 1 0-.94.94L7.06 8 3.2 11.86a.67.67 0 1 0 .94.94L8 8.94l3.86 3.86a.67.67 0 1 0 .94-.94L8.94 8l3.86-3.86Z">
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
+        <button class="modal-close-button button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Мы обязательно ответим вам!</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <fieldset class="modal-form-login">
-              <legend class="visually-hidden">Личный кабинет</legend>
-              <label class="visually-hidden" for="login-field">Имя и фамилия</label>
+              <legend class="visually-hidden">Задать вопрос</legend>
+              <label class="visually-hidden" for="login-field">Ваше имя и фамилия</label>
               <input class="modal-form-input" type="text" name="login" id="login-field" required
                 placeholder="Имя и фамилия">
-              <label class="visually-hidden" for="login-field">Ваш логин</label>
+              <label class="visually-hidden" for="login-field">Ваша почта</label>
               <input class="modal-form-input" type="email" name="login" id="login-field" required
                 placeholder="email@example.com">
               <label class="visually-hidden" for="password-field">Ваш вопрос</label>
               <textarea class="modal-textarea" name="text" rows="5" cols="30" wrap
                 placeholder="В свободной форме"></textarea>
             </fieldset>
-            <button class="popover-button-login popover-button button-additional button">
+            <button class="modal-button-login button-additional button" type="button">
               Отправить
             </button>
           </form>
         </section>
       </div>
-    </div> -->
+    </div>
   </body>
 
 </html>
