@@ -423,6 +423,7 @@ body {
 }
 
 .search-input {
+  position: relative;
   width: 90%;
   background: #FFFFFF;
   border: 1px solid #B9B9B9;
@@ -431,6 +432,20 @@ body {
   font-family: inherit;
   font-size: 16px;
   color: #B9B9B9;
+}
+
+.search-input::-webkit-search-cancel-button {
+  position: absolute;
+  right: 10px;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* opacity: 0.4; */
+  cursor: pointer;
 }
 
 .search-input:focus {
@@ -1482,6 +1497,29 @@ body {
   text-underline-position: under;
 }
 
+/*  MODAL   */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(45, 52, 64, 0.3);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none;
+ }
 /* CATALOG */
 
 .main-inner {
