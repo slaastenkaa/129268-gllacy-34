@@ -85,10 +85,10 @@
                   <fieldset class="popover-form-login">
                     <legend class="visually-hidden">Личный кабинет</legend>
                     <label class="visually-hidden" for="login-field-login">Ваш логин</label>
-                    <input class="popover-form-input" type="email" name="login" id="login-field-login"
+                    <input class="popover-form-input form-input" type="email" name="login" id="login-field-login"
                       placeholder="email@example.com">
                     <label class="visually-hidden" for="password-field">Ваш пароль</label>
-                    <input class="popover-form-input" type="password" name="password" id="password-field"
+                    <input class="popover-form-input form-input" type="password" name="password" id="password-field"
                       value="Пароль">
                   </fieldset>
                   <div class="popover-form-button">
@@ -154,7 +154,7 @@
                 </ul>
               </div>
               <div class="popover-cart-order">
-                <button class="popover-button button-additional button">
+                <button class="popover-button button-additional button" type="submit">
                   Оформить заказ
                 </button>
                 <span class="popover-price">Итого: 790 ₽</span>
@@ -181,7 +181,7 @@
                   джемом <br> – это идеальный десерт для всей семьи.</p>
                 <a class="button-main button" href="./catalog.html">Заказать</a>
               </div>
-              <img class="slide-image" src="./images/ice-strawberry.png" width="348" height="554"
+              <img class="slide-image" src="./images/ice-strawberry.png" width="306" height="507"
                 alt="Пломбир с клубничным джемом.">
             </div>
             <div class="slider-order">
@@ -296,7 +296,8 @@
             <div class="gift-features marshmallow-image">
               <div class="gift-features-container">
                 <h3 class="gift-subtitle">Маршмеллоу даром!</h3>
-                <p class="gift-description">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных <br> зефирок совершенно бесплатно.</p>
+                <p class="gift-description">При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных <br>
+                  зефирок совершенно бесплатно.</p>
                 <a class="button-main button" href="#">Хочу подарок</a>
               </div>
             </div>
@@ -311,7 +312,7 @@
               <h3 class="taste-name">Малинка</h3>
               <p class="taste-description">Сливочное мороженое с малиновым джемом</p>
               <div class="taste-add">
-                <p class="taste-price">310 ₽/кг</p>
+                <p class="taste-price">310 <span class="price">₽/кг</span></p>
                 <a class="taste-price-link" href="./catalog.html">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -345,7 +346,7 @@
               <h3 class="taste-name">Черника</h3>
               <p class="taste-description">Крем-брюле <br> с черничным джемом</p>
               <div class="taste-add">
-                <p class="taste-price">330 ₽/кг</p>
+                <p class="taste-price">330 <span class="price">₽/кг</span></p>
                 <a class="taste-price-link" href="./catalog.html">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -362,7 +363,7 @@
               <h3 class="taste-name">Бабл-гам</h3>
               <p class="taste-description">Ванильный пломбир <br> со сладкой посыпкой</p>
               <div class="taste-add">
-                <p class="taste-price">320 ₽/кг</p>
+                <p class="taste-price">320 <span class="price">₽/кг</span></p>
                 <a class="taste-price-link" href="./catalog.html">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -428,11 +429,13 @@
           <h2 class="visually-hidden">Доставка мороженого на дом</h2>
           <div class="delivery-description">
             <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
-            <p class="delivery-text">Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин? Закажите <br>
+            <p class="delivery-text">Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин?
+              Закажите <br>
               доставку мороженого на дом, и курьер <br> привезёт вам ваш заказ в течение часа!</p>
           </div>
           <div class="delivery-info">
-            <p class="delivery-info-title">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить заказ.
+            <p class="delivery-info-title">Укажите адрес и дату доставки, и мы свяжемся <br> с вами, чтобы подтвердить
+              заказ.
             </p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="delivery-form-date">
@@ -441,8 +444,7 @@
                   <span class="delivery-tooltip">
                     <button class="delivery-form-info" type="button" aria-labelledby="tooltip-label-date">
                       <svg class="delivery-form-icon" aria-hidden="true" focusable="false" fill="currentColor"
-                        width="16" height="16" viewBox="0 0 16 16"
-                        xmlns="http://www.w3.org/2000/svg">
+                        width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" />
                       </svg>
@@ -451,12 +453,12 @@
                       заказа</span>
                   </span>
                 </span>
-                <input class="delivery-form-input" type="text" id="delivery-date" name="delivery-date"
+                <input class="delivery-form-input form-input" type="text" id="delivery-date" name="delivery-date"
                   placeholder="01.04.2020">
               </div>
               <div class="delivery-form-phone">
                 <label class="delivery-form-label delivery-form-text" for="delivery-phone">Телефон</label>
-                <input class="delivery-form-input" type="text" id="delivery-phone" name="delivery-phone"
+                <input class="delivery-form-input form-input" type="text" id="delivery-phone" name="delivery-phone"
                   placeholder="+7 800 999-00-00">
               </div>
               <div class="delivery-form-address">
@@ -465,17 +467,17 @@
                   <span class="delivery-tooltip">
                     <button class="delivery-form-info" type="button" aria-labelledby="tooltip-label-address">
                       <svg class="delivery-form-icon" aria-hidden="true" focusable="false" fill="currentColor"
-                        width="16" height="16" viewBox="0 0 16 16"
-                        xmlns="http://www.w3.org/2000/svg">
+                        width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M8 2.33a5.67 5.67 0 1 0 0 11.34A5.67 5.67 0 0 0 8 2.33ZM1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm7-.67c.37 0 .67.3.67.67v2.53a.67.67 0 1 1-1.34 0V8c0-.37.3-.67.67-.67ZM8 4.8a.67.67 0 1 0 0 1.33.67.67 0 0 0 0-1.33Z" />
                       </svg>
                     </button>
-                    <span class="delivery-tooltip-text" role="tooltip" id="tooltip-label-address">Укажите адрес для доставки
+                    <span class="delivery-tooltip-text" role="tooltip" id="tooltip-label-address">Укажите адрес для
+                      доставки
                       заказа</span>
                   </span>
                 </span>
-                <input class="delivery-form-input" type="text" id="delivery-address" name="delivery-address"
+                <input class="delivery-form-input form-input" type="text" id="delivery-address" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
               </div>
               <button class="delivery-form-button button-additional button" type="submit">Отправить</button>
@@ -496,7 +498,7 @@
       </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer-container">
+      <div class="page-footer-container main-footer-container">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list social-list">
@@ -573,10 +575,10 @@
             <fieldset class="modal-form-login">
               <legend class="visually-hidden">Задать вопрос</legend>
               <label class="visually-hidden" for="login-field-name">Ваше имя и фамилия</label>
-              <input class="modal-form-input" type="text" name="login" id="login-field-name" required
+              <input class="modal-form-input form-input" type="text" name="login" id="login-field-name" required
                 placeholder="Имя и фамилия">
               <label class="visually-hidden" for="login-field-email">Ваша почта</label>
-              <input class="modal-form-input" type="email" name="login" id="login-field-email" required
+              <input class="modal-form-input form-input" type="email" name="login" id="login-field-email" required
                 placeholder="email@example.com">
               <label class="visually-hidden" for="password-field">Ваш вопрос</label>
               <textarea class="modal-textarea" name="text" rows="5" cols="30"

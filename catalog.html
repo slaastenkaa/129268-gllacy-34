@@ -18,7 +18,7 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item popover-main">
-            <a class="navigation-link" href="#">Каталог</a>
+            <a class="navigation-link navigation-link-current" href="#">Каталог</a>
             <div class="popover-container container-catalog">
               <h3 class="popover-title">Новинки</h3>
               <ul class="popover-dropdown-list">
@@ -85,10 +85,10 @@
                   <fieldset class="popover-form-login">
                     <legend class="visually-hidden">Личный кабинет</legend>
                     <label class="visually-hidden" for="login-field-login">Ваш логин</label>
-                    <input class="popover-form-input" type="email" name="login" id="login-field-login"
+                    <input class="popover-form-input form-input" type="email" name="login" id="login-field-login"
                       placeholder="email@example.com">
                     <label class="visually-hidden" for="password-field">Ваш пароль</label>
-                    <input class="popover-form-input" type="password" name="password" id="password-field"
+                    <input class="popover-form-input form-input" type="password" name="password" id="password-field"
                       value="Пароль">
                   </fieldset>
                   <div class="popover-form-button">
@@ -154,7 +154,7 @@
                 </ul>
               </div>
               <div class="popover-cart-order">
-                <button class="popover-button button-additional button">
+                <button class="popover-button button-additional button" type="submit">
                   Оформить заказ
                 </button>
                 <span class="popover-price">Итого: 790 ₽</span>
@@ -198,7 +198,7 @@
               <div class="range">
                 <div class="catalog-filter-title range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    Цена: <input class="range-input" type="number" value="450" name="min-price"> ₽
+                    Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽
                   </label>
                   <label class="catalog-filter-label">
                     - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
@@ -207,10 +207,10 @@
                 <div class="range-wrapper">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 40px; width: 56px">
-                      <button class="range-toggle toggle-min">
+                      <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+                      <button class="range-toggle toggle-max" type="button">
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
@@ -233,14 +233,13 @@
                       width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z" />
-                      </svg>
+                    </svg>
                     <span class="control-label">0%</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item radio-catalog-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="percent" value="to-10%"
-                      checked>
+                    <input class="visually-hidden control-input" type="radio" name="percent" value="to-10%" checked>
                     <svg class="radio-icon radio-true" aria-hidden="true" focusable="false" fill="currentColor"
                       width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -250,7 +249,7 @@
                       width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z" />
-                      </svg>
+                    </svg>
                     <span class="control-label">до 10%</span>
                   </label>
                 </li>
@@ -266,7 +265,7 @@
                       width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z" />
-                      </svg>
+                    </svg>
                     <span class="control-label">до 30%</span>
                   </label>
                 </li>
@@ -282,14 +281,14 @@
                       width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M8 1.33a6.67 6.67 0 0 0 0 13.34A6.67 6.67 0 0 0 8 1.33ZM8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Z" />
-                      </svg>
+                    </svg>
                     <span class="control-label">выше 30%</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Наполнители:</legend>
+              <legend class="catalog-filter-title checkbox-catalog-title">Наполнители:</legend>
               <ul class="catalog-filter-list checkbox-catalog-list">
                 <li class="catalog-filter-item checkbox-catalog-item">
                   <label class="control">
@@ -385,7 +384,7 @@
               </a>
               <p class="product-cart-description">Сливочное мороженое с малиновым джемом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">310 ₽/кг</p>
+                <p class="product-cart-price">310 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -404,7 +403,7 @@
               </a>
               <p class="product-cart-description">Фисташковый пломбир с кусочками шоколада</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">340 ₽/кг</p>
+                <p class="product-cart-price">340 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -421,9 +420,9 @@
                   alt="Крем-брюле с черничным джемом.">
                 <h3 class="product-cart-title">Черника</h3>
               </a>
-              <p class="product-cart-description">Крем-брюле с черничным джемом</p>
+              <p class="product-cart-description">Крем-брюле <br> с черничным джемом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">330 ₽/кг</p>
+                <p class="product-cart-price">330 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -440,9 +439,9 @@
                   alt="Ванильный пломбир со сладкой посыпкой.">
                 <h3 class="product-cart-title">Бабл-гам</h3>
               </a>
-              <p class="product-cart-description">Ванильный пломбир со сладкой посыпкой</p>
+              <p class="product-cart-description">Ванильный пломбир <br> со сладкой посыпкой</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">320 ₽/кг</p>
+                <p class="product-cart-price">320 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -461,7 +460,7 @@
               </a>
               <p class="product-cart-description">Сливочное мороженое с ежевичным джемом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">330 ₽/кг</p>
+                <p class="product-cart-price">330 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -478,9 +477,9 @@
                   alt="Сливочный пломбир с банановым вкусом.">
                 <h3 class="product-cart-title">Банан</h3>
               </a>
-              <p class="product-cart-description">Сливочный пломбир с банановым вкусом</p>
+              <p class="product-cart-description">Сливочный пломбир <br> с банановым вкусом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">340 ₽/кг</p>
+                <p class="product-cart-price">340 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -499,7 +498,7 @@
               </a>
               <p class="product-cart-description">Классический шоколадный пломбир</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">270 ₽/кг</p>
+                <p class="product-cart-price">270 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -516,9 +515,9 @@
                   alt="Сливочный пломбир с клубничным вкусом.">
                 <h3 class="product-cart-title">Клубничка</h3>
               </a>
-              <p class="product-cart-description">Сливочный пломбир с клубничным вкусом</p>
+              <p class="product-cart-description">Сливочный пломбир <br> с клубничным вкусом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">300 ₽/кг</p>
+                <p class="product-cart-price">300 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -537,7 +536,7 @@
               </a>
               <p class="product-cart-description">Освежающий лимонный сорбет</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">310 ₽/кг</p>
+                <p class="product-cart-price">310 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -554,9 +553,9 @@
                   alt="Сливочный пломбир с ментоловым сиропом.">
                 <h3 class="product-cart-title">Ментол</h3>
               </a>
-              <p class="product-cart-description">Сливочный пломбир с ментоловым сиропом</p>
+              <p class="product-cart-description">Сливочный пломбир <br> с ментоловым сиропом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">320 ₽/кг</p>
+                <p class="product-cart-price">320 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -575,7 +574,7 @@
               </a>
               <p class="product-cart-description">Фисташковый пломбир с шоколадным сиропом</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">360 ₽/кг</p>
+                <p class="product-cart-price">360 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
@@ -592,9 +591,9 @@
                   height="168" alt="Классическое крем-брюле.">
                 <h3 class="product-cart-title">Крем-брюле</h3>
               </a>
-              <p class="product-cart-description">Классическое крем-брюле</p>
+              <p class="product-cart-description">Классическое <br> крем-брюле</p>
               <div class="product-cart-add">
-                <p class="product-cart-price">280 ₽/кг</p>
+                <p class="product-cart-price">280 <span class="price">₽/кг</span></p>
                 <button class="product-cart-button button" type="button">
                   <svg class="taste-price-icon" aria-hidden="true" focusable="false" width="16" height="17"
                     fill="currentColor" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
