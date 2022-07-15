@@ -157,6 +157,7 @@ body {
   background: #2D3440;
   border-radius: 50%;
   box-shadow: 0 0 0 2px #2D3440;
+  outline: none;
 }
 
 .social-link:active {
